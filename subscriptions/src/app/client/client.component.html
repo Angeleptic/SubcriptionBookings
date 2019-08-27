@@ -1,0 +1,80 @@
+<form #form = "ngForm" autocomplete="off" *ngIf="service.formData">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>
+                    Client ID
+                </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input name="#ClientID" #ClientID="ngModel"[(ngModel)]="servie.formData.Client_ID" class="form-control" readonly >
+            </div>
+                
+            </div>
+            <div class="form-group">
+                <label>
+                    Client Name
+                </label>
+                <select name="#ClientName" #ClientName="ngModel"[(ngModel)]="servie.formData.Client_Name" class="form-control">
+                   <option value="0">--select--</option>
+                </select>
+            </div>
+            <div class="form-group">
+                    <label>
+                        Client Surname
+                    </label>
+                    <select name="#ClientSurname" #ClientSurname="ngModel"[(ngModel)]="servie.formData.Client_Surname" class="form-control">
+                       <option value="0">--select--</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    Client Contact
+                </label>
+                <select name="#ClientContact" #ClientContact="ngModel"[(ngModel)]="servie.formData.Client_Contact" class="form-control">
+                   <option value="0">--select--</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label>
+                Client Height
+            </label>
+            <select name="#ClientHeight" #ClientHeight="ngModel"[(ngModel)]="servie.formData.Client_Height" class="form-control">
+               <option value="0">--select--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>
+                Booking Status ID
+            </label>
+            <select name="#DateOfBirth" #DateOfBirth="ngModel"[(ngModel)]="servie.formData.Date_of_Birth" class="form-control">
+               <option value="0">--select--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>
+                Subscription Balance
+            </label>
+            <select name="#SubscriptionBalance" #SubscriptionBalance="ngModel"[(ngModel)]="servie.formData.Subscription_Balance" class="form-control">
+               <option value="0">--select--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>
+                Gender ID
+            </label>
+            <select name="#GenderID" #GenderID="ngModel"[(ngModel)]="servie.formData.Gender_ID" class="form-control">
+               <option value="0">--select--</option>
+            </select>
+        </div>
+        </div>
+        <div class="form-group">
+           
+        </div>
+       
+    </div> 
+    <button type="submit" class="btn-dark"><i class="fa fa-database"></i>Submit</button>
+</form>
+
