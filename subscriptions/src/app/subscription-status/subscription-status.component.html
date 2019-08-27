@@ -1,1 +1,32 @@
-<p>subscription-status works!</p>
+<form #form = "ngForm" autocomplete="off" *ngIf="service.formData">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>
+                    Subscription status ID
+                </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input name="#SubStatusID" #SubStatusID="ngModel"[(ngModel)]="servie.formData.Sub_Status_ID" class="form-control" readonly >
+            </div>
+                
+            </div>
+            <div class="form-group">
+                <label>
+                    Subsciption status Description
+                </label>
+                <select name="#SubStatusDesc" #SubStatusDesc="ngModel"[(ngModel)]="servie.formData.Sub_Status_Desc" class="form-control">
+                   <option value="0">--select--</option>
+                </select>
+            </div>
+            
+        </div>
+       
+       
+    </div> 
+    <button type="submit" class="btn-dark"><i class="fa fa-database"></i>Submit</button>
+</form>
+
+

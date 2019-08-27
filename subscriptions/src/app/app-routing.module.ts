@@ -5,6 +5,7 @@ import { SubscriptionStatusComponent } from './subscription-status/subscription-
 import { BookingComponent } from './booking/booking.component';
 import { BookingStatus } from './shared/booking-status.model';
 import { Client } from './client.model';
+import { BookingSlot } from './booking-slot.model';
 
 const routes: Routes = [
   {path:'',redirectTo:'client', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path :'Subscriptions', component:Subcribtion},
   {path :'Subscriptions-status', component:SubscriptionStatusComponent},
   {path :'booking-status', component:BookingStatus},
-  {path: 'client', component:Client}
+  {path: 'client', component:Client},
+  {path: 'booking-slot', component:BookingSlot}
 ];
 
 @NgModule({

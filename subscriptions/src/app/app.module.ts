@@ -10,6 +10,8 @@ import { BookingStatusComponent } from './booking-status/booking-status.componen
 import { SubscriptionStatusComponent } from './subscription-status/subscription-status.component';
 import { BookingService } from './shared/booking.service';
 import { ClientComponent } from './client/client.component';
+import { BookingSlotComponent } from './booking-slot/booking-slot.component';
+import { BookingTypeComponent } from './booking-type/booking-type.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ClientComponent } from './client/client.component';
     BookingComponent,
     BookingStatusComponent,
     SubscriptionStatusComponent,
-    ClientComponent
+    ClientComponent,
+    BookingSlotComponent,
+    BookingTypeComponent
   ],
   imports: [
     BrowserModule,
